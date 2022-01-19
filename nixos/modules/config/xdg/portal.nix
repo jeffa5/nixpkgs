@@ -65,6 +65,7 @@ with lib;
       environment.sessionVariables = {
         GTK_USE_PORTAL = mkIf cfg.gtkUsePortal "1";
         XDG_DESKTOP_PORTAL_DIR = "${joinedPortals}/share/xdg-desktop-portal/portals";
+        XDG_DATA_DIRS = [ "${joinedPortals}/share" ];
       };
     };
 }
