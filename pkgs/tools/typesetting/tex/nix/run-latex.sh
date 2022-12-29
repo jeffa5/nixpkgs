@@ -52,6 +52,7 @@ runLaTeX() {
         -e "LaTeX Warning: Label(s) may have changed." \
         -e "Rerun to get citations correct." \
         -e "Please rerun LaTeX." \
+        -e "Please (re)run Biber on the file" \
         "$tmpFile"; then
         runNeeded=1
     fi
